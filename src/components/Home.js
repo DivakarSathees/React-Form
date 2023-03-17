@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Main = () => {
+const Home = () => {
   return (
     <div data-testid="/">
          <h1>Welcome to our travel website!</h1>
@@ -11,4 +11,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Home

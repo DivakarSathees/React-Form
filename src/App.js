@@ -4,8 +4,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Destination from './components/Destination'
 import Item from './components/Item'
-import Main from './components/Main'
-// import './App.css'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
 
 const App = () => {
@@ -18,8 +17,8 @@ const App = () => {
         <Route path='/destination' element={<Destination/>}/>
         <Route path='/item/:id' element={<Item />} />
         <Route path='/contact' element={<Contact />} />
-        <Route exact="true" path="/" element={<Main />} />
-        <Route path='*' element={<Main/>}/>
+        <Route exact="true" path="/" element={<Home />} />
+        <Route path='*' element={<Home/>}/>
 
 
         </Routes>
