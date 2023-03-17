@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import App from './App';
 
-test('renders Home link', () => {
+test('test_case1', () => {
   render(
     <MemoryRouter>
       <Navbar />
@@ -18,7 +18,7 @@ test('renders Home link', () => {
   expect(screen.getByText('Home')).toBeInTheDocument();
 });
 
-test('renders About us link', () => {
+test('test_case2', () => {
   render(
     <MemoryRouter>
       <Navbar />
@@ -28,7 +28,7 @@ test('renders About us link', () => {
   expect(screen.getByText('About us')).toBeInTheDocument();
 });
 
-test('renders Destination link', () => {
+test('test_case3', () => {
   render(
     <MemoryRouter>
       <Navbar />
@@ -38,7 +38,7 @@ test('renders Destination link', () => {
   expect(screen.getByText('Destination')).toBeInTheDocument();
 });
 
-test('renders Contact Us link', () => {
+test('test_case4', () => {
   render(
     <MemoryRouter>
       <Navbar />
@@ -48,7 +48,7 @@ test('renders Contact Us link', () => {
   expect(screen.getByText('Contact Us')).toBeInTheDocument();
 });
 
-test('renders About component for /about route', () => {
+test('test_case5', () => {
   render(
     <MemoryRouter initialEntries={['/about']}>
       <About />
@@ -56,7 +56,7 @@ test('renders About component for /about route', () => {
   );
   expect(screen.getByTestId('about')).toBeInTheDocument();
 });
-test('renders Destination component for /destination route', () => {
+test('test_case6', () => {
   render(
     <MemoryRouter initialEntries={['/destination']}>
       <Destination />
@@ -66,7 +66,7 @@ test('renders Destination component for /destination route', () => {
 });
 
 
-test('renders Contact component for /contact route', () => {
+test('test_case7', () => {
   render(
     <MemoryRouter initialEntries={['/contact']}>
       <Contact />
@@ -76,7 +76,7 @@ test('renders Contact component for /contact route', () => {
 });
 
 
-test('renders Home component for / route', () => {
+test('test_case8', () => {
   render(
     <MemoryRouter initialEntries={['/']}>
       <Home />
@@ -85,7 +85,7 @@ test('renders Home component for / route', () => {
   expect(screen.getByTestId('/')).toBeInTheDocument();
 });
 
-test('renders Home component for /** route', () => {
+test('test_case9', () => {
   render(
     <MemoryRouter initialEntries={['/**']}>
       <Home />
